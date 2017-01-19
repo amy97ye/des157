@@ -66,13 +66,10 @@ h2{
   font-size: 30px;
 }
 
-h3{
-  position: fixed;
-  top: 3.5em;
-  right: 12.5%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
+h2{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 header a{
@@ -85,4 +82,13 @@ header a:hover{
 
 img{
   width:100%;
+}
+
+#link{
+  position: fixed;
+  top: 3.5em;
+  right: 12.5%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
 }
