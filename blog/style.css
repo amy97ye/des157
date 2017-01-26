@@ -20,7 +20,7 @@ article{
 }
 
 div{
-  width: 75%;
+  width: 50%;
   margin: 1em auto;
 }
 
@@ -28,6 +28,7 @@ figure{
   float: left;
   margin: 20px;
   margin-left: 0px;
+  margin-bottom: 0px;
   width: 50%;
 }
 
@@ -48,6 +49,7 @@ footer{
   clear: both;
   text-align: center;
   padding-top: 100px;
+  margin-bottom: 50px;
 }
 
 h1{
@@ -67,7 +69,7 @@ h2{
 }
 
 h3{
-  position: fixed;
+  position: absolute;
   top: 2em;
   right: 12.5%;
   font-family: "Open Sans", sans-serif;
@@ -83,6 +85,7 @@ h4{
   font-weight: 600;
   font-size: 20px;
   font-style: italic;
+  padding-top: 10px;
 }
 
 header a{
@@ -95,6 +98,11 @@ header a:hover{
 
 img{
   width:100%;
+}
+
+.fullwidth{
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .third{
