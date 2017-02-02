@@ -1,0 +1,53 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ch 13</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ch 13 - the cat's hat</h1>
+    <h2>open the console to see the results of the script</h2>
+
+    <img src="img/cat.png" id="cat" style="position: absolute" alt="cat">
+    <img src="img/hat.png" id="hat" style="position: absolute" alt="hat">
+
+    <script>
+
+      var cat = document.querySelector("#cat");
+      var hat = document.querySelector("#hat");
+      var angle = 0, lastTime = null;
+      function animate(time) {
+        if (lastTime != null)
+        angle += (time - lastTime) * 0.001;
+        lastTime = time;
+        cat.style.top = 50 + (Math.sin(angle) * 20) + "vh";
+        cat.style.left = 50 + (Math.cos(angle) * 40) + "vw";
+        hat.style.top = 50 + (Math.sin(angle) * -20) + "vh";
+        hat.style.left = 50 + (Math.cos(angle) * -40) + "vw";
+        requestAnimationFrame(animate);
+      }
+      requestAnimationFrame(animate);
+
+    </script>
+</body>
