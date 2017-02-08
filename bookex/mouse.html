@@ -1,0 +1,129 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ch 14</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+
+        .trail { /* className for the trail elements */
+          position: absolute;
+          top:0;
+          right:0;
+          height: 20px;
+          width: 20px;
+          border-radius: 30px;
+          background: teal;
+  }
+  body {
+    height: 300px;
+  }
+    </style>
+</head>
+
+<body>
+    <h1>ch 14 - mouse trail</h1>
+    <h2>move the cursor around</h2>
+
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+
+    <article id="stuff">
+
+    </article>
+
+    <script>
+      var elements = document.querySelectorAll('div');
+      var x,y,x1,y1,x2, x3, y2, y3;
+      var e1, e2, e3, e4, e5;
+      var wait = false;
+
+      for(var i = 0; i < elements.length; i++){
+        elements[i].className = 'trail';
+      }
+
+      addEventListener("mousemove", function(event){
+        move1();
+        move2();
+        move3();
+        move4();
+        move5();
+          if(!wait){
+            saveCoords();
+            wait = true;
+            setTimeout(function(){ wait = false; },25);
+          }
+      });
+
+      function saveCoords(){
+        x3 = x2;
+        y3 = y2;
+        x2 = x1;
+        y2 = y1;
+        x1 = x;
+        y1 = y;
+        x = event.pageX;
+        y = event.pageY;
+      }
+
+      function move1(){
+        e1 = elements[0];
+        e1.style.left = event.pageX + 'px';
+        e1.style.top = event.pageY + 'px';
+      }
+
+      function move2(){
+        e2 = elements[1];
+        e2.style.left = x + 'px';
+        e2.style.top = y + 'px';
+        e2.style.opacity = .8;
+      }
+
+      function move3(){
+        e3 = elements[2];
+        e3.style.left = x1 + 'px';
+        e3.style.top = y1 + 'px';
+        e3.style.opacity = .6;
+      }
+
+      function move4(){
+        e4 = elements[3];
+        e4.style.left = x2 + 'px';
+        e4.style.top = y2 + 'px';
+        e4.style.opacity = .4;
+      }
+
+      function move5(){
+        e5 = elements[4];
+        e5.style.left = x3 + 'px';
+        e5.style.top = y3 + 'px';
+        e5.style.opacity = .2;
+      }
+
+    </script>
+</body>
