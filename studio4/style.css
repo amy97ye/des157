@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700');
+
+/* CSS Document */
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+header{
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 120px;
+  color: #A3C7E9;
+  margin-top: 20px;
+}
+
+h2{
+  font-weight: 400;
+  font-size: 70px;
+  color: #D8E5F5;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+
+img{
+  display: inline-block;
+  width: 10%;
+  margin: 50px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border: 10px solid #A3C7E9;
+  border-radius: 200px;
+  transition: transform 2s;
+}
+
+img:hover{
+  transform: scale(1.5,1.5);
+  cursor: pointer;
+}
+
+p{
+  display:inline-block;
+  width:10%;
+  margin:50px;
+  margin-top: 25px;
+  border: 10px solid white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  opacity: 0;
+  vertical-align: text-top;
+}
+
+div{
+  text-align: center;
+  margin-top:0px;
+}
+
+footer{
+  clear: both;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #D8E5F5;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+h3{
+  position: absolute;
+  top: 50px;
+  right: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #D8E5F5;
+  padding: 20px;
+  border-radius: 30px;
+  color:white;
+}
+
+#danceTip, #studyTip, #sleepTip{
+  border: 10px solid white;
+  border-radius: 50px;
+  background-color: #D8E5F5;
+  color:white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
