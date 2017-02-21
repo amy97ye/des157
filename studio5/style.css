@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700');
+
+/* CSS Document */
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+footer{
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  position: absolute;
+  top:100vh;
+  box-sizing: border-box;
+  background: #6D6E71;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+h2{
+    position: absolute;
+    bottom: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    color:black;
+    border-style: outset;
+    border-color: buttonface;
+    border-width: 5px;
+}
+
+img{
+  position: absolute;
+  right: 2.5vh;
+  top: 2.5vh;
+  width: 5vh;
+  border-radius: 30px;
+  border: 2px solid #D1D3D4;
+}
+
+input[type="submit"]{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border-width: 5px;
+  color:black;
+}
+
+input[type="text"]{
+  width: 3in;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+li{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+p{
+  color: white;
+}
+
+.page{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  bottom: 0px;
+  background-color: #D1D3D4;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.tab{
+  width: 10vw;
+  height: 5vh;
+  background: #D1D3D4;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5vh;
+}
+
+.tab:first-of-type{
+  margin-left: 0px;
+}
+
+#button{
+  left: 50px;
+}
+
+#button2{
+  right: 50px;
+}
