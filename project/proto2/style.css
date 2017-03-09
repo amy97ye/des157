@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
+
+/* CSS Document */
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+}
+
+main{
+  width: 375px;
+  height: 559px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: auto;
+  border: 2px solid grey;
+  position: relative;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px;
+  margin-bottom: 10px;
+  color: #67D3BC;
+}
+
+h2{
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+h3, label{
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: dimgray;
+}
+
+p{
+  font-weight: 300;
+  font-size: 14px;
+  color: gray;
+  padding-bottom: 5px;
+}
+
+header{
+  margin-top: -35px;
+  text-align: right;
+  height: 60px;
+  box-shadow: 0px 5px 5px gainsboro;
+}
+
+#head{
+  text-align: right;
+}
+
+input[type="text"]{
+  width: 100%;
+}
+
+form{
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+a{
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 50px auto;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: #43B7A6;
+}
+
+#back{
+  width: 45px;
+  height: 45px;
+  background-color: #90DFCE;
+  position: absolute;
+  top: -35px;
+  left: 35px;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+  line-height: 43px;
+}
+
+.darkgreen{
+  background-color: #43B7A6;
+}
+
+.lightgreen{
+  background-color: #90DFCE;
+}
+
+.middlegreen{
+  background-color: #67D3BC;
+}
+
+article{
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border-top: 2px solid whitesmoke;
+}
+
+article:first-of-type{
+  border: none;
+}
+
+.fields{
+  text-align: left;
+  margin: 20px 0;
+}
+
+#content{
+  width: 100%;
+  height: 400px;
+}
+
+#pass{
+  height: 200px;
+  width: 100%;
+}
+
+textarea, input[type="text"]{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  width: 100%;
+  border: 2px solid #90DFCE;
+  border-radius: 10px;
+  text-align: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
