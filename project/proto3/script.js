@@ -3,18 +3,34 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM fully loaded and parsed");
 
+    //buttons
     var signInButton = document.getElementById("sign-in-button");
     var signOutButton = document.getElementById("sign-out-button");
-    var currentUser = document.getElementById("current-user");
     var submitButton = document.getElementById("submit-button");
+
+    //form
     var postTitle = document.getElementById("post-title");
     var postContent = document.getElementById("post-content");
     var postPass = document.getElementById("post-pass");
+
+    //header
+    var header = document.getElementById("header");
+    var headerSpace = document.getElementById("header-space");
+
+    //sections
+    var loginPage = document.getElementById("login-page");
+    var homePage = document.getElementById("home-page");
+    var postPage = document.getElementById("post-page");
+    var thankYouPage = document.getElementById("thank-you-page");
     var yourPosts = document.getElementById("your-posts");
     var allPosts = document.getElementById("all-posts");
 
+    //footer
+    var footer = document.getElementById("footer");
+    var footerSpace = document.getElementById("footer-space");
 
-
+    //user
+    var currentUser = document.getElementById("current-user");
     var userId;
     var userName;
 
@@ -22,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
       var provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth().signInWithRedirect(provider);
+
+      loginPage.style.display = "none";
+      homePage.style.display = "default";
 
     });
 
