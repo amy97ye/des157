@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       yourPosts.insertBefore(article, yourPosts.childNodes[0]);
 
-      // allPosts.insertBefore(article, allPosts.childNodes[0]);
+      allPosts.insertBefore(article, allPosts.childNodes[0]);
 
       writePost(userId, mainTitle, mainContent, mainPass);
 
