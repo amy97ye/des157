@@ -37,10 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
     signInButton.addEventListener('click', function(){
 
       var provider = new firebase.auth.GoogleAuthProvider();
-      firebase.auth().signInWithRedirect(provider);
-
-      loginPage.style.display = "none";
-      homePage.style.display = "default";
+      firebase.auth().signInWithRedirect(provider); 
 
     });
 
