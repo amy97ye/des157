@@ -61,6 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
       var mainContent = postContent.value;
       var mainPass = postPass.value;
 
+      writePost(userId, mainTitle, mainContent, mainPass);
+
     });
 
     function writePost(userId, ptitle, pcontent, ppass) {
