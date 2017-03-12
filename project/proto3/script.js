@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var postTitle = document.getElementById("post-title");
     var postContent = document.getElementById("post-content");
     var postPass = document.getElementById("post-pass");
+    var yourPosts = document.getElementById("your-posts");
+    var allPosts = document.getElementById("all-posts");
     var userId;
+    var userName;
 
     signInButton.addEventListener('click', function(){
 
@@ -38,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         currentUser.innerHTML = user.displayName;
         userId = user.uid;
+        userName = user.displayName;
         console.log(userId);
         writeUserData(uid, displayName, email, photoURL);
 
@@ -60,6 +64,12 @@ document.addEventListener("DOMContentLoaded", function() {
       var mainTitle = postTitle.value;
       var mainContent = postContent.value;
       var mainPass = postPass.value;
+
+      var article = document.createElement("div");
+
+      article.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <p>" + mainContent + "</p> <p>" + mainPass + "</p>";
+
+      yourPosts.insertBefore(article, yourPosts.childNodes[0]);
 
       writePost(userId, mainTitle, mainContent, mainPass);
 
