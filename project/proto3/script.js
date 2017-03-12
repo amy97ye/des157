@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var postPass = document.getElementById("post-pass");
     var yourPosts = document.getElementById("your-posts");
     var allPosts = document.getElementById("all-posts");
+
+    
+
     var userId;
     var userName;
 
@@ -39,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var uid = user.uid;
         var providerData = user.providerData;
 
-        currentUser.innerHTML = user.displayName;
+        currentUser.innerHTML = "Welcome" + user.displayName;
         userId = user.uid;
         userName = user.displayName;
         console.log(userId);

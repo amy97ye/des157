@@ -8,32 +8,91 @@
 </head>
 
 <body>
-    <h1>firebase</h1>
+  <main>
 
-    <button type="button" id="sign-in-button">sign in</button>
+    <header id="header">
+      <h1>SPARK</h1>
+    </header>
 
-    <button type="button" id="sign-out-button">sign out</button>
+    <div class = "header-space">
+      <h1>SPARK</h1>
+    </div>
 
-    <h2 id="current-user"></h2>
+    <section id="login-page">
+      <h1 class = "title">SPARK</h1>
 
-    <h2>post</h2>
-    <h3>post title</h3>
-    <textarea id="post-title"></textarea>
-    <h3>post content</h3>
-    <textarea id="post-content"></textarea>
-    <h3>pass it on</h3>
-    <textarea id="post-pass"></textarea>
-    <button type="button" id="submit-button">submit</button>
+      <br />
+
+      <h3>Spark is an app that lets you post about acts of kindness that happened to you and how you can pass it on! </h3>
+
+      <button type="button" id="sign-in-button">sign in with google</button>
+
+    </section>
+
+    <section id = "home-page">
+
+      <h1 class = "title" id="current-user"></h1>
+
+      <nav>
+        <button type = "button" id ="post-button">Post</button>
+
+        <button type = "button" id = "your-posts-button"> my Posts</button>
+
+        <button type = "button" id = "all-posts-button">All Posts</button>
+
+        <button type="button" id="sign-out-button">Sign Out</button>
+      </nav>
+
+    </section>
+
+    <section id = "post-page">
+
+      <h2>post</h2>
+      <h3>post title</h3>
+      <textarea id="post-title"></textarea>
+      <h3>post content</h3>
+      <textarea id="post-content"></textarea>
+      <h3>pass it on</h3>
+      <textarea id="post-pass"></textarea>
+      <button type="button" id="submit-button">submit</button>
+
+    </section>
+
+    <section id ="thank-you-page">
+
+      <h2>Thank you for posting!</h2>
+
+      <button type = "button" id = "post-again-button">Post again?</button>
+
+      <button type = "button" id = "browse-button">Browse Posts</button>
+
+    </section>
 
     <section id="your-posts">
 
     </section>
 
     <section id="all-posts">
-      
+
     </section>
 
+    <div id="footer-space">
+    </div>
 
+    <footer>
+      <nav>
+        <button type = "button" id ="post-footer">add Post</button>
+
+        <button type = "button" id = "your-posts-footer"> my Posts</button>
+
+        <button type = "button" id = "all-posts-footer">All Posts</button>
+
+        <button type="button" id="sign-out-footer">Sign Out</button>
+
+      </nav>
+    </footer>
+
+  </main>
 
 
     <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
