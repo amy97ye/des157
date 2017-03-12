@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function writePost(userId, ptitle, pcontent, ppass) {
-      firebase.database().ref('posts/' + userId).set({
+      firebase.database().ref().child("posts").push().set({
         title: ptitle,
         content: pcontent,
         pass: ppass
