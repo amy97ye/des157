@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if(userName != "null"){
           loginPage.style.display = "none";
-          homePage.style.display = "default";
+          homePage.style.display = "block";
         }
 
       } else {
