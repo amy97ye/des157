@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var uid = user.uid;
         var providerData = user.providerData;
 
-        currentUser.innerHTML(user.displayName);
+        currentUser.innerHTML = user.displayName;
       } else {
 
-        currentUser.innerHTML("null");
+        currentUser.innerHTML = "null";
   }
 });
 
