@@ -44,6 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
     signOutButton.addEventListener('click', function(){
 
       firebase.auth().signOut();
+      loginPage.style.display = "block";
+      homePage.style.display = "none";
+      header.style.display = "none";
+      headerSpace.style.display = "none";
 
     });
 
@@ -58,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var uid = user.uid;
         var providerData = user.providerData;
 
-        currentUser.innerHTML = "Welcome <br>" + user.displayName;
+        currentUser.innerHTML = "Welcome" + user.displayName;
         userId = user.uid;
         userName = user.displayName;
         console.log(userId);
@@ -72,8 +76,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
       } else {
-
         currentUser.innerHTML = "null";
+
       }
     });
 
