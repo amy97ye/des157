@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var signInButton = document.getElementById("sign-in-button");
     var signOutButton = document.getElementById("sign-out-button");
     var currentUser = document.getElementById("current-user");
+    var submitButton = document.getElementById("submit-button");
+    var postTitle = document.getElementById("post-title");
+    var postContent = document.getElementById("post-content");
+    var postPass = document.getElementById("post-pass");
     var userId;
 
     signInButton.addEventListener('click', function(){
@@ -33,13 +37,38 @@ document.addEventListener("DOMContentLoaded", function() {
         var providerData = user.providerData;
 
         currentUser.innerHTML = user.displayName;
-        userId = user.displayName;
+        userId = user.uid;
         console.log(userId);
+        writeUserData(uid, displayName, email, photoURL);
 
       } else {
 
         currentUser.innerHTML = "null";
       }
-});
+    });
+
+    function writeUserData(userId, name, email, imageUrl) {
+      firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email,
+        profile_picture : imageUrl
+      });
+    }
+
+    submitButton.addEventListener('click', function(){
+
+      var mainTitle = postTitle.value;
+      var mainContent = postContent.value;
+      var mainPass = postPass.value;
+
+    });
+
+    function writePost(userId, ptitle, pcontent, ppass) {
+      firebase.database().ref('posts/' + userId).set({
+        title: ptitle,
+        content: pcontent,
+        pass: ppass
+      });
+    }
 
 });
