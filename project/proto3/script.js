@@ -34,12 +34,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         currentUser.innerHTML = user.displayName;
         userId = user.displayName;
+        console.log(userId);
 
       } else {
 
         currentUser.innerHTML = "null";
-
-        console.log(userId);
       }
 });
 
