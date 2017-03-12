@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var signInButton = document.getElementById("sign-in-button");
     var signOutButton = document.getElementById("sign-out-button");
     var currentUser = document.getElementById("current-user");
+    var userId;
 
     signInButton.addEventListener('click', function(){
 
@@ -32,10 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var providerData = user.providerData;
 
         currentUser.innerHTML = user.displayName;
+        userId = user.displayName;
+
       } else {
 
         currentUser.innerHTML = "null";
-  }
+
+        console.log(userId);
+      }
 });
 
 });
