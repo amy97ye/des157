@@ -32,12 +32,12 @@ document.addEventListener("DOMContentLoaded", function() {
     //user
     var currentUser = document.getElementById("current-user");
     var userId;
-    var userName;
+    var userName = "null";
 
     signInButton.addEventListener('click', function(){
 
       var provider = new firebase.auth.GoogleAuthProvider();
-      firebase.auth().signInWithRedirect(provider); 
+      firebase.auth().signInWithRedirect(provider);
 
     });
 
@@ -63,6 +63,11 @@ document.addEventListener("DOMContentLoaded", function() {
         userName = user.displayName;
         console.log(userId);
         writeUserData(uid, displayName, email, photoURL);
+
+        if(userName != "null"){
+          loginPage.style.display = "none";
+          homePage.style.display = "default";
+        }
 
       } else {
 
