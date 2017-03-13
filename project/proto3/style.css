@@ -185,6 +185,16 @@ button{
 	border-radius: 30px;
 }
 
+article{
+	padding: 20px 0;
+  box-sizing: border-box;
+	border-top: 2px solid whitesmoke;
+}
+
+article:first-of-type{
+  border: none;
+}
+
 .darkgreen{
   background-color: #43B7A6;
 }
