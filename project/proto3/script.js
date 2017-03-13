@@ -10,6 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var postButton = document.getElementById("post-button");
     var allPostsButton = document.getElementById("all-posts-button");
     var yourPostsButton = document.getElementById("your-posts-button");
+    var postFooter = document.getElementById("post-footer");
+    var yourPostsFooter = document.getElementById("your-posts-footer");
+    var allPostsFooter = document.getElementById("all-posts-footer");
+    var signOutFooter = document.getElementById("sign-out-footer");
+    var postAgainButton = document.getElementById("post-again-button");
+    var browseButton = document.getElementById("browse-button");
 
     //form
     var postTitle = document.getElementById("post-title");
@@ -112,6 +118,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
       writePost(userId, mainTitle, mainContent, mainPass);
 
+      postPage.style.display = "none";
+      thankYouPage.style.display = "block";
+
     });
 
     function writePost(userId, ptitle, pcontent, ppass) {
@@ -126,6 +135,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       postPage.style.display = "block";
       homePage.style.display = "none";
+      footer.style.display = "block";
+      footerSpace.style.display = "block";
 
     }),
 
@@ -133,6 +144,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       allPosts.style.display = "block";
       homePage.style.display = "none";
+      footer.style.display = "block";
+      footerSpace.style.display = "block";
 
     });
 
@@ -140,7 +153,54 @@ document.addEventListener("DOMContentLoaded", function() {
 
       yourPosts.style.display = "block";
       homePage.style.display = "none";
+      footer.style.display = "block";
+      footerSpace.style.display = "block";
 
     });
+
+    signOutFooter.addEventListener('click', function(){
+
+      firebase.auth().signOut();
+      loginPage.style.display = "block";
+      postPage.style.display = "none";
+      allPosts.style.display = "none";
+      yourPosts.style.display = "none";
+      homePage.style.display = "none";
+      header.style.display = "none";
+      headerSpace.style.display = "none";
+      footer.style.display = "none";
+      footerSpace.style.display = "none";
+
+    });
+
+    postFooter.addEventListener("click", function(){
+      postPage.style.display = "block";
+      allPosts.style.display = "none";
+      yourPosts.style.display = "none";
+    });
+
+    yourPostsFooter.addEventListener("click", function(){
+      postPage.style.display = "none";
+      allPosts.style.display = "none";
+      yourPosts.style.display = "block";
+    });
+
+    allPostsFooter.addEventListener("click", function(){
+      postPage.style.display = "none";
+      allPosts.style.display = "block";
+      yourPosts.style.display = "none";
+    });
+
+    postAgainButton.addEventListener("click", function(){
+      thankYouPage.style.display = "none";
+      postPage.style.display = "block";
+    });
+
+    browseButton.addEventListener("click", function(){
+      thankYouPage.style.display = "none";
+      allPosts.style.display = "block";
+    });
+
+
 
 });
