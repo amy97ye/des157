@@ -145,6 +145,18 @@ h4{
 	color: #67D3BC;
 }
 
+textarea{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  width: 100%;
+  border: 2px solid #90DFCE;
+  border-radius: 10px;
+  text-align: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
 p{
   font-weight: 300;
   font-size: 14px;
