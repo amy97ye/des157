@@ -121,6 +121,10 @@ document.addEventListener("DOMContentLoaded", function() {
       postPage.style.display = "none";
       thankYouPage.style.display = "block";
 
+      postTitle.value = "";
+      postContent.value = "";
+      postPass.value = "";
+
     });
 
     function writePost(userId, ptitle, pcontent, ppass) {
