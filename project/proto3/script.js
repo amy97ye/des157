@@ -112,9 +112,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
       article1.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <p>" + mainContent + "</p> <p>" + mainPass + "</p>";
 
-      yourPosts.insertBefore(article, yourPosts.childNodes[0]);
+      yourPosts.insertBefore(article, yourPosts.childNodes[1]);
 
-      allPosts.insertBefore(article1, allPosts.childNodes[0]);
+      allPosts.insertBefore(article1, allPosts.childNodes[1]);
 
       writePost(userId, mainTitle, mainContent, mainPass);
 
