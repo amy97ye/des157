@@ -176,18 +176,21 @@ document.addEventListener("DOMContentLoaded", function() {
     postFooter.addEventListener("click", function(){
       postPage.style.display = "block";
       allPosts.style.display = "none";
+      thankYouPage.style.display = "none";
       yourPosts.style.display = "none";
     });
 
     yourPostsFooter.addEventListener("click", function(){
       postPage.style.display = "none";
       allPosts.style.display = "none";
+      thankYouPage.style.display = "none";
       yourPosts.style.display = "block";
     });
 
     allPostsFooter.addEventListener("click", function(){
       postPage.style.display = "none";
       allPosts.style.display = "block";
+      thankYouPage.style.display = "none";
       yourPosts.style.display = "none";
     });
 
