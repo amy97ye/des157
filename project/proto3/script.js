@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var signInButton = document.getElementById("sign-in-button");
     var signOutButton = document.getElementById("sign-out-button");
     var submitButton = document.getElementById("submit-button");
+    var postButton = document.getElementById("post-button");
+    var allPostsButton = document.getElementById("all-posts-button");
+    var yourPostsButton = document.getElementById("your-posts-button");
 
     //form
     var postTitle = document.getElementById("post-title");
@@ -62,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var uid = user.uid;
         var providerData = user.providerData;
 
-        currentUser.innerHTML = "Welcome" + user.displayName;
+        currentUser.innerHTML = "Welcome " + user.displayName;
         userId = user.uid;
         userName = user.displayName;
         console.log(userId);
@@ -118,5 +121,26 @@ document.addEventListener("DOMContentLoaded", function() {
         pass: ppass
       });
     }
+
+    postButton.addEventListener("click", function(){
+
+      postPage.style.display = "block";
+      homePage.style.display = "none";
+
+    }),
+
+    allPostsButton.addEventListener("click", function(){
+
+      allPosts.style.display = "block";
+      homePage.style.display = "none";
+
+    });
+
+    yourPostsButton.addEventListener("click", function(){
+
+      yourPosts.style.display = "block";
+      homePage.style.display = "none";
+
+    });
 
 });
