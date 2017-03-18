@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOMContentLoaded template</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+
+    <header id="header">
+      <h1>SPARK</h1>
+    </header>
+
+    <div id = "header-space">
+      <h1>SPARK</h1>
+    </div>
+
+    <section id="login-page">
+      <h1 class = "title">SPARK</h1>
+
+      <br />
+
+      <h3>Spark is an app that lets you post about acts of kindness that happened to you and how you can pass it on! </h3>
+
+      <button type="button" id="sign-in-button">sign in with google</button>
+
+    </section>
+
+    <section id = "home-page">
+
+      <h4 id="current-user"></h4>
+
+      <nav>
+        <button type = "button" id ="post-button">Post</button>
+
+        <button type = "button" id = "your-posts-button"> my Posts</button>
+
+        <button type = "button" id = "all-posts-button">All Posts</button>
+
+        <button type="button" id="sign-out-button">Sign Out</button>
+      </nav>
+
+    </section>
+
+    <section id = "post-page">
+
+      <h4>post</h4>
+      <h3>post title</h3>
+      <textarea id="post-title"></textarea>
+      <h3>what act of kindness have you given or received today?</h3>
+      <textarea id="post-content"></textarea>
+      <h3>how will you continue to pass on the kindness?</h3>
+      <textarea id="post-pass"></textarea>
+      <button type="button" id="submit-button">submit</button>
+
+    </section>
+
+    <section id ="thank-you-page">
+
+      <h4>Thank you for posting!</h4>
+
+      <button type = "button" id = "post-again-button">Post again?</button>
+
+      <button type = "button" id = "browse-button">Browse Posts</button>
+
+    </section>
+
+    <section id="your-posts">
+      <h4>Your Posts</h4>
+
+      <div>
+
+      </div>
+
+    </section>
+
+    <section id="all-posts">
+      <h4>All Posts</h4>
+
+      <div>
+
+      </div>
+
+      <article>
+        <h2>Food and friends</h2>
+        <h3>Amy Ye</h3>
+        <p>
+          Winter quarter has been a tough time. For a while I was really stressed about school and working two jobs, which made me very lonely as well. But, one of my classmates invited me over for dinner. She cooked a delicious meal of chicken and rice. It really touched me that she wanted to hang out with me and took the time out to do something nice for me when I was feeling down.
+        </p>
+        <p>
+          When I have the chance, I would love to invite her over to my place to hangout and eat. But it sucks that I'm not as good of a chef as her.
+        </p>
+      </article>
+
+      <article>
+        <h2>Care Packages</h2>
+        <h3>Peiyi Chen</h3>
+        <p>
+          My friends could see that school and extra curricular activities were weighing down on me. In fact, I had been in a sour mood due to illness as well. So, three of my friends came over with care packages, which was just what I needed going into this finals season.
+        </p>
+        <p>
+          To pass it on, I will give my other friends care packages when they are in need. To my friends who treated me well, I will treat them out for a well deserved meal!
+        </p>
+      </article>
+
+    </section>
+
+    <div id="footer-space">
+    </div>
+
+    <footer id = "footer">
+      <nav>
+        <button type = "button" id ="post-footer">add Post</button>
+
+        <button type = "button" id = "your-posts-footer"> my Posts</button>
+
+        <button type = "button" id = "all-posts-footer">All Posts</button>
+
+        <button type="button" id="sign-out-footer">Sign Out</button>
+
+      </nav>
+    </footer>
+
+  </main>
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDuWI9aOzG5r1UMe-exubfI1e9ATbxU82g",
+        authDomain: "spark-99891.firebaseapp.com",
+        databaseURL: "https://spark-99891.firebaseio.com",
+        storageBucket: "spark-99891.appspot.com",
+        messagingSenderId: "895941688128"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src='script.js' type="text/javascript"></script>
+
+</body>
+
+</html>
