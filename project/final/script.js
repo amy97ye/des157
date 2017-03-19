@@ -115,17 +115,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
       if(anon.checked == true){
 
-        article.innerHTML = "<h2>" + mainTitle + "</h2> <h3>Anonymous Poster</h3> <p>" + mainContent + "</p> <h5>I will pass it on by... <h5><p>" + mainPass + "</p> <h3>" + month + "-" + date + "-" + year "</h3>";
+        article.innerHTML = "<h2>" + mainTitle + "</h2> <h3>Anonymous Poster</h3> <p>" + mainContent + "</p> <h5>I will pass it on by... </h5><p>" + mainPass + "</p> <h3>" + month + "-" + date + "-" + year "</h3>";
 
-        article1.innerHTML = "<h2>" + mainTitle + "</h2> <h3>Anonymous Poster</h3> <p>" + mainContent + "</p> <h5>I will pass it on by... <h5><p>" + mainPass + "</p> <h3>" + month + "-" + date + "-" + year "</h3>";
+        article1.innerHTML = "<h2>" + mainTitle + "</h2> <h3>Anonymous Poster</h3> <p>" + mainContent + "</p> <h5>I will pass it on by... </h5><p>" + mainPass + "</p> <h3>" + month + "-" + date + "-" + year "</h3>";
 
       }
 
       else{
 
-        article.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <p>" + mainContent + "</p> <h5>I will pass it on by... <h5><p>" + mainPass + "</p> <h3>" + month + "-" + date + "-" + year "</h3>";
+        article.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <p>" + mainContent + "</p> <h5>I will pass it on by... </h5><p>" + mainPass + "</p> <h3>" + month + "-" + date + "-" + year "</h3>";
 
-        article1.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <p>" + mainContent + "</p> <h5>I will pass it on by... <h5><p>" + mainPass + "</p> <h3>" + month + "-" + date + "-" + year "</h3>";
+        article1.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <p>" + mainContent + "</p> <h5>I will pass it on by... </h5><p>" + mainPass + "</p> <h3>" + month + "-" + date + "-" + year "</h3>";
       }
 
       yourPosts.insertBefore(article, yourPosts.childNodes[2]);
