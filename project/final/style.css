@@ -243,6 +243,12 @@ article:first-of-type{
 	display: inline;
 }
 
+#validation{
+	position: fixed;
+	bottom: 15px;
+	left: 15px;
+}
+
 footer, #footer-space{
 	display: none;
 }
