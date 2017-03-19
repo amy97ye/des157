@@ -116,17 +116,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
       if(anon.checked == true){
 
-        article.innerHTML = "<h2>" + mainTitle + "</h2> <h3>Anonymous Poster</h3> <h5>Today...</h5> <p>" + mainContent + "</p> <br> <br> <h5>I will pass it on by... </h5><p>" + mainPass + "</p> <br> <br><h3>" + month + "-" + date + "-" + year + "</h3>";
+        article.innerHTML = "<h2>" + mainTitle + "</h2> <h3>Anonymous Poster</h3> <h3>" + month + "-" + date + "-" + year + "</h3> <br><h5>Today...</h5> <p>" + mainContent + "</p> <br> <br><h5>I will pass it on by... </h5><p>" + mainPass + "</p> <br><br>";
 
-        article1.innerHTML = "<h2>" + mainTitle + "</h2> <h3>Anonymous Poster</h3> <h5>Today...</h5> <p>" + mainContent + "</p> <br> <br><h5>I will pass it on by... </h5><p>" + mainPass + "</p> <br><br> <h3>" + month + "-" + date + "-" + year + "</h3>";
+        article1.innerHTML = "<h2>" + mainTitle + "</h2> <h3>Anonymous Poster</h3> <h3>" + month + "-" + date + "-" + year + "</h3> <br><h5>Today...</h5> <p>" + mainContent + "</p> <br> <br><h5>I will pass it on by... </h5><p>" + mainPass + "</p> <br><br>";
 
       }
 
       else{
 
-        article.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <h5>Today...</h5> <p>" + mainContent + "</p> <br><br> <h5>I will pass it on by... </h5><p>" + mainPass + "</p> <br><br> <h3>" + month + "-" + date + "-" + year + "</h3>";
+        article.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <h3>" + month + "-" + date + "-" + year + "</h3> <br><h5>Today...</h5> <p>" + mainContent + "</p> <br><br> <h5>I will pass it on by... </h5><p>" + mainPass + "</p> <br><br>";
 
-        article1.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <h5>Today...</h5> <p>" + mainContent + "</p> <br><br> <h5>I will pass it on by... </h5><p>" + mainPass + "</p> <br> <br><h3>" + month + "-" + date + "-" + year + "</h3>";
+        article1.innerHTML = "<h2>" + mainTitle + "</h2> <h3>" + userName + "</h3> <h3>" + month + "-" + date + "-" + year + "</h3> <br><h5>Today...</h5> <p>" + mainContent + "</p> <br><br> <h5>I will pass it on by... </h5><p>" + mainPass + "</p> <br><br>";
       }
 
       yourPosts.insertBefore(article, yourPosts.childNodes[2]);
