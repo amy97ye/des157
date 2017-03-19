@@ -105,9 +105,12 @@ document.addEventListener("DOMContentLoaded", function() {
       var mainContent = postContent.value;
       var mainPass = postPass.value;
 
-      var month = getMonth() + 1;
-      var date = getDate();
-      var year = getFullYear();
+      var month = new Date();
+      month = getMonth() + 1;
+      var date = new Date();
+      date = getDate();
+      var year = new Date();
+      year = getFullYear();
 
       var article = document.createElement("article");
 
