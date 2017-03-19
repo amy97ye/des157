@@ -239,6 +239,10 @@ article:first-of-type{
 	display: none;
 }
 
+.inline{
+	display: inline;
+}
+
 footer, #footer-space{
 	display: none;
 }
