@@ -69,7 +69,7 @@ main{
   border: 2px solid grey;
 }
 
-header, #header-space{
+header{
   text-align: right;
 	padding: 15px;
 	padding-right: 70px;
@@ -83,6 +83,11 @@ header, #header-space{
 
 	header{
 		position: fixed;
+	}
+
+	#header-space{
+		height: 70px;
+		width: 100%;
 	}
 
 footer{
