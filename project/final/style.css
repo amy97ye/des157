@@ -67,6 +67,7 @@ main{
   overflow-x: hidden;
   margin: auto;
   border: 2px solid grey;
+	background-color: #81e1e0;
 }
 
 header, #header-space{
@@ -222,7 +223,6 @@ article:first-of-type{
 }
 
 #login-page{
-	background-color: #81e1e0;
 }
 
 #home-page{

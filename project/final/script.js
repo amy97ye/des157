@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
           homePage.style.display = "block";
           header.style.display = "block";
           headerSpace.style.display = "block";
+          document.getElementById("main").style.backgroundColor = "white";
         }
 
       } else {
