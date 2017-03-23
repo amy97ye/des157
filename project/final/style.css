@@ -106,16 +106,11 @@ footer{
 		width: 100%;
 	}
 
-footer nav button{
+footer nav img{
 	display: inline-block;
 	width: 50px;
-	font-weight: 400;
-  font-size: 12px;
 	margin:2.5px;
 	box-sizing: border-box;
-	background-color: white;
-	color: #90DFCE;
-	border: 2px solid #90DFCE;
 }
 
 h1{
