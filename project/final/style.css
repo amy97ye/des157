@@ -218,8 +218,12 @@ article:first-of-type{
   background-color: #67D3BC;
 }
 
-.white{
+.description{
 	color: white;
+	font-weight: 300;
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 #login-page{
@@ -247,6 +251,13 @@ article:first-of-type{
 
 .inline{
 	display: inline;
+}
+
+.large-logo{
+	width: 200px;
+	margin: 70px auto;
+	display: block;
+	margin-bottom: 30px;
 }
 
 #validation{
