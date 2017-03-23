@@ -51,16 +51,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
-    signOutButton.addEventListener('click', function(){
-
-      firebase.auth().signOut();
-      loginPage.style.display = "block";
-      homePage.style.display = "none";
-      header.style.display = "none";
-      headerSpace.style.display = "none";
-      document.getElementById("main").style.backgroundColor = "#81e1e0";
-
-    });
+    // signOutButton.addEventListener('click', function(){
+    //
+    //   firebase.auth().signOut();
+    //   loginPage.style.display = "block";
+    //   homePage.style.display = "none";
+    //   header.style.display = "none";
+    //   headerSpace.style.display = "none";
+    //   document.getElementById("main").style.backgroundColor = "#81e1e0";
+    //
+    // });
 
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
