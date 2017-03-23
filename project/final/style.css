@@ -217,7 +217,12 @@ article:first-of-type{
   background-color: #67D3BC;
 }
 
+.white{
+	color: white;
+}
+
 #login-page{
+	background-color: #81e1e0;
 }
 
 #home-page{
@@ -252,4 +257,10 @@ article:first-of-type{
 
 footer, #footer-space{
 	display: none;
+}
+
+#sign-in-button{
+	margin: 50px 0;
+  display: block;
+  width: 270px;
 }
