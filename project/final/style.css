@@ -196,6 +196,11 @@ button{
 	border-bottom: 5px #6cbfbe solid;
 }
 
+nav button{
+	text-align: left;
+	text-indent: 100px;
+}
+
 article{
 	padding: 20px 0;
   box-sizing: border-box;
@@ -274,4 +279,14 @@ footer, #footer-space{
 	margin: 50px 0;
   display: block;
   width: 270px;
+}
+
+#image-nav img{
+	margin: 20px auto;
+	display: block;
+}
+
+#image-nav{
+	position: fixed;
+	top: 100px;
 }
