@@ -199,6 +199,9 @@ document.addEventListener("DOMContentLoaded", function() {
       allPosts.style.display = "none";
       thankYouPage.style.display = "none";
       yourPosts.style.display = "none";
+      postFooter.src="images/tab_addC.png";
+      yourPostsFooter.src="images/tab_me.png";
+      allPostsFooter.src="images/tab_feeds.png";
     });
 
     yourPostsFooter.addEventListener("click", function(){
@@ -206,6 +209,9 @@ document.addEventListener("DOMContentLoaded", function() {
       allPosts.style.display = "none";
       thankYouPage.style.display = "none";
       yourPosts.style.display = "block";
+      postFooter.src="images/tab_add.png";
+      yourPostsFooter.src="images/tab_meC.png";
+      allPostsFooter.src="images/tab_feeds.png";
     });
 
     allPostsFooter.addEventListener("click", function(){
@@ -213,6 +219,9 @@ document.addEventListener("DOMContentLoaded", function() {
       allPosts.style.display = "block";
       thankYouPage.style.display = "none";
       yourPosts.style.display = "none";
+      postFooter.src="images/tab_add.png";
+      yourPostsFooter.src="images/tab_me.png";
+      allPostsFooter.src="images/tab_feedsC.png";
     });
 
     postAgainButton.addEventListener("click", function(){

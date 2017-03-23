@@ -91,7 +91,7 @@ header, #header-space{
 	}
 
 footer{
-	padding: 15px 70px;
+	padding: 12px 20px;
 	background-color: white;
 	position: fixed;
 	width: 375px;
@@ -108,8 +108,8 @@ footer{
 
 footer nav img{
 	display: inline-block;
-	width: 50px;
-	margin:2.5px;
+	width: 60px;
+	margin:0px 10px;
 	box-sizing: border-box;
 }
 
