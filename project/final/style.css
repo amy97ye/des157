@@ -282,11 +282,18 @@ footer, #footer-space{
 }
 
 #image-nav img{
-	margin: 20px auto;
+	margin: 10px auto;
 	display: block;
+	width: 60px;
+	padding-left: 10px;
 }
 
 #image-nav{
 	position: fixed;
-	top: 100px;
+	top: 140px;
+}
+
+#current-user{
+	color:white;
+	padding-left: 100px;
 }
