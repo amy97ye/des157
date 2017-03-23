@@ -160,8 +160,8 @@ document.addEventListener("DOMContentLoaded", function() {
       homePage.style.display = "none";
       footer.style.display = "block";
       footerSpace.style.display = "block";
-      postFooter.src="images/tab_add.png";
-      yourPostsFooter.src="images/tab_meC.png";
+      postFooter.src="images/tab_addC.png";
+      yourPostsFooter.src="images/tab_me.png";
       allPostsFooter.src="images/tab_feeds.png";
 
     }),

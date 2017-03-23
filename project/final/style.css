@@ -74,7 +74,7 @@ header, #header-space{
   text-align: right;
 	padding: 15px;
 	padding-right: 70px;
-	background-color: white;
+	background-color: #81e1e0;
   box-shadow: 0px 5px 5px gainsboro;
 	margin-bottom: 25px;
 	width: 375px;
@@ -118,7 +118,7 @@ h1{
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #67D3BC;
+  color: #81e1e0;
 }
 
 .title{
@@ -143,14 +143,14 @@ h4{
 	font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
-	color: #67D3BC;
+	color: #6cbfbe;
 }
 
 h5{
   font-weight: 400;
   font-size: 14px;
   padding-bottom: 5px;
-  color: #67D3BC;
+  color: #6cbfbe;
 	display: inline;
 }
 
@@ -159,7 +159,7 @@ textarea{
   font-weight: 300;
   font-size: 14px;
   width: 100%;
-  border: 2px solid #90DFCE;
+  border: 2px solid #6cbfbe;
   border-radius: 10px;
   text-align: left;
   padding: 5px;
