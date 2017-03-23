@@ -71,7 +71,6 @@ main{
 }
 
 header, #header-space{
-  text-align: right;
 	padding: 15px;
 	padding-right: 70px;
 	background-color: #81e1e0;
@@ -184,7 +183,7 @@ button{
 	width: 270px;
 	height: 50px;
 	display: block;
-	margin: 20px auto;
+	margin: 26px auto;
 	background-color: #81e1e0;
 	border: none;
 	font-family: "Lato", sans-serif;
@@ -285,10 +284,20 @@ footer, #footer-space{
 	margin: 10px auto;
 	display: block;
 	width: 60px;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 #image-nav{
 	position: fixed;
-	top: 140px;
+	top: 165px;
+}
+
+#header-image{
+	margin: 0 auto;
+	padding-left: 65px;
+	display: block;
+}
+
+#current-user{
+	margin-bottom:50px;
 }
