@@ -137,6 +137,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       writePost(userId, mainTitle, mainContent, mainPass);
 
+      anon.checked = false;
+
       postPage.style.display = "none";
       thankYouPage.style.display = "block";
 
