@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
       homePage.style.display = "none";
       header.style.display = "none";
       headerSpace.style.display = "none";
+      document.getElementById("main").style.backgroundColor = "#81e1e0";
 
     });
 
@@ -201,6 +202,7 @@ document.addEventListener("DOMContentLoaded", function() {
       headerSpace.style.display = "none";
       footer.style.display = "none";
       footerSpace.style.display = "none";
+      document.getElementById("main").style.backgroundColor = "#81e1e0";
 
     });
 
